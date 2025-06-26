@@ -16,7 +16,7 @@ header{
     z-index: 999;
     top: 0%;
     left: 0%;
-    height: 70px;
+    height: 60px;
 }
 nav{
     display: flex;
@@ -46,7 +46,7 @@ nav div a:hover{
     background-image: url(Profile_picture.jpg);
     background-size: cover;
     margin-top: 140px;
-    box-shadow: 20px 20px 40px rgb(56, 189, 248, 0.4);
+    box-shadow: 20px 10px 10px rgb(56, 189, 248, 0.4);
     border-radius: 50%;
 }
 .home-section{
@@ -56,6 +56,9 @@ nav div a:hover{
 }
 .info span{
     color: #38BDF8;
+}
+.info h4{
+    font-size: 1.8em;
 }
 .logo{
     display: flex;
@@ -77,3 +80,35 @@ nav div a:hover{
 .logo a:hover{
     color: #38BDF8;
 }
+.aboutDp{
+    height: 500px;
+    width: 500px;
+    border: 2px solid black;
+    background-image: url(aboutDp.jpg);
+    background-size: cover;
+    margin-top: 190px;
+    box-shadow: 20px 10px 10px rgb(56, 189, 248, 0.4);
+    border-radius: 50%;
+}
+.intro h2{
+    font-size: 4em;
+}
+.about-Section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.about{
+    height: 100vh;
+}
+p{
+    font-size: 1.8em;
+}
+.intro{
+    flex: 1 1 60%;
+    padding-right: 30px;
+    padding-left: 30px; 
+}
+
