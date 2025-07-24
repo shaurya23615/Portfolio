@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
     padding-top: 60px;
     background-color: #0F172A;
@@ -38,7 +40,9 @@ nav div a {
 
 nav div a:hover {
     color: #38BDF8;
+    text-decoration: underline;
 }
+
 
 /* HOME SECTION */
 .home {
@@ -141,7 +145,7 @@ nav div a:hover {
 
 /* SKILL SECTION */
 .skill {
-    height: 100vh;
+    min-height: 100vh;
     padding: 60px 20px;
     text-align: center;
 }
@@ -154,53 +158,73 @@ nav div a:hover {
     padding-bottom: 5px;
 }
 
+.toggle-buttons {
+    margin-bottom: 30px;
+}
+
+.toggle-buttons button {
+    margin: 0 15px;
+    padding: 10px 20px;
+    background-color: #334155;
+    color: #F8FAFC;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.4em;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-buttons button:hover {
+    background-color: #38BDF8;
+    color: #0F172A;
+}
+
 .skill-section {
     display: flex;
     justify-content: center;
     gap: 50px;
     font-size: 22px;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
 
-.html img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 10px;
-}
-
-.css img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 10px;
-}
-
-.javascript img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 10px;
-}
-
-.python img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 10px;
-}
-
-.mysql img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 10px;
-}
-
-#skills {
+.skill-item {
     background-color: #334155;
     border-radius: 12px;
     padding: 20px;
     width: 200px;
     transition: transform 0.3s ease;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
 }
 
-#skills:hover {
+.skill-item img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.skill-item:hover {
     transform: scale(1.2);
     cursor: pointer;
+}
+
+.certificate-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.certificate-section a {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.certificate-section img:hover {
+    transform: scale(1.05);
 }

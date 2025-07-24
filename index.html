@@ -7,8 +7,11 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="script.js" defer></script>
+
 
 </head>
+
 <body>
     <header>
         <nav>
@@ -46,11 +49,14 @@
                 <div class="intro">
                     <h2>About Me</h2>
                     <p>
-                        My name is Shaurya Kumar, and I'm a tech enthusiast learning frontend development using <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>.
+                        My name is Shaurya Kumar, and I'm a tech enthusiast learning frontend development using
+                        <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>.
                         I have a background in Computer Science and a growing passion for building web applications.
                         I love turning ideas into real-world web applications.
-                        Every day, I try to improve my skills by working on small projects and learning new tools and technologies.
-                        My long-term goal is to become a skilled full stack developer and contribute to meaningful software projects that solve real problems.
+                        Every day, I try to improve my skills by working on small projects and learning new tools and
+                        technologies.
+                        My long-term goal is to become a skilled full stack developer and contribute to meaningful
+                        software projects that solve real problems.
                     </p>
                 </div>
                 <div class="aboutDp">
@@ -60,29 +66,41 @@
         </section>
         <section class="skill" id="skill">
             <h2>My Skills</h2>
-            <div class="skill-section">
-                <div class="html" id="skills">
+
+            <div class="toggle-buttons">
+                <button onclick="showSkills()">Skills</button>
+                <button onclick="showCertificates()">Certificates</button>
+            </div>
+
+            <div class="skill-section" id="skills-section">
+                <div class="skill-item">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
                     <p>HTML</p>
                 </div>
-                <div class="css" id="skills">
+                <div class="skill-item">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
                     <p>CSS</p>
                 </div>
-                <div class="javascript" id="skills">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="Javascript">
-                    <p>Javascript</p>
+                <div class="skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                        alt="JavaScript">
+                    <p>JavaScript</p>
                 </div>
-                <div class="python" id="skills">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                <div class="skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                        alt="Python">
                     <p>Python</p>
                 </div>
-                <div class="mysql" id="skills">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySql">
-                    <p>MySql</p>
+                <div class="skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                    <p>MySQL</p>
                 </div>
             </div>
+
+            <div class="certificate-section" id="certificate-section" style="display: none;">
+            </div>
         </section>
+
     </main>
 </body>
 
