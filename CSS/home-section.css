@@ -1,0 +1,197 @@
+.home {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5% 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.home-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 10px;
+}
+
+
+.profile {
+    width: 30vw;
+    max-width: 350px;
+    height: auto;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-image: url("../image/Profile_picture.jpg");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 20px rgba(106, 17, 203, 0.6);
+    animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-3vw);
+    }
+}
+
+.info h2 {
+    margin: 5px 0;
+    font-size: 3rem;
+    word-wrap: break-word;
+}
+
+.info h2 span {
+    color: #ffd700;
+}
+
+.info h4 {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 1.8rem;
+    word-wrap: break-word;
+}
+
+
+.logo {
+    margin-top: 15px;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.logo a {
+    font-size: 2.7rem;
+    color: #F8FAFC;
+    transition: color 0.3s;
+}
+
+.logo a:hover {
+    color: #38ef7d;
+}
+
+
+@media (min-width: 1024px) {
+    .profile {
+        width: 30vw;
+        max-width: 350px;
+    }
+
+    .info h2 {
+        font-size: 3rem;
+    }
+
+    .info h4 {
+        font-size: 1.8rem;
+    }
+
+    .logo a {
+        font-size: 2.7rem;
+    }
+}
+
+
+@media (max-width: 830px) {
+    .profile {
+        width: 35vw;
+        max-width: 250px;
+        animation: none;
+    }
+
+    .info h2 {
+        font-size: 2.5rem;
+    }
+
+    .info h4 {
+        font-size: 1.5rem;
+    }
+
+    .logo a {
+        font-size: 2.3rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .profile {
+        width: 45vw;
+        max-width: 150px;
+    }
+
+    .info h2 {
+        font-size: 1.7rem;
+    }
+
+    .info h4 {
+        font-size: 1rem;
+    }
+
+    .logo a {
+        font-size: 1.7rem;
+    }
+}
+
+
+@media (max-width: 360px) {
+    .profile {
+        width: 50vw;
+        max-width: 120px;
+    }
+
+    .info h2 {
+        font-size: 1.5rem;
+    }
+
+    .info h4 {
+        font-size: 0.9rem;
+    }
+
+    .logo a {
+        font-size: 1.5rem;
+    }
+}
+
+
+@media (max-width: 320px) {
+    .profile {
+        width: 55vw;
+        max-width: 100px;
+    }
+
+    .info h2 {
+        font-size: 1.3rem;
+    }
+
+    .info h4 {
+        font-size: 0.8rem;
+    }
+
+    .logo a {
+        font-size: 1.3rem;
+    }
+}
+
+
+@media (max-height: 600px) {
+    .home {
+        min-height: auto;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+    .profile {
+        width: 35vw;
+        max-width: 140px;
+        height: auto;
+    }
+}
