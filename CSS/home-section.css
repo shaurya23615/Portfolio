@@ -34,15 +34,6 @@
     animation: bounce 1s infinite alternate;
 }
 
-@keyframes bounce {
-    from {
-        transform: translateY(0);
-    }
-
-    to {
-        transform: translateY(-1vw);
-    }
-}
 
 .info h2 {
     margin: 5px 0;
