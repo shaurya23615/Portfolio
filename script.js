@@ -10,8 +10,8 @@ document.addEventListener('DOMContentLoaded', function () {
 // Resume download
 document.getElementById("downloadCV").addEventListener("click", function () {
     const link = document.createElement("a");
-    link.href = "Resume/Shaurya_Kumar_Resume.pdf";
-    link.download = "Shaurya_Kumar_Resume.pdf";
+    link.href = "resume/Shaurya_kumar_resume.pdf";
+    link.download = "Shaurya_kumar_resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
